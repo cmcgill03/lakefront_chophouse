@@ -665,6 +665,54 @@ a:active {
 	width: 50%;
 }
 
+#footer_menu .menu {
+    display: block;
+    margin: 0 auto 0;
+    padding: 0;
+    text-align:center;
+    width:100%;
+	color: #2EFE2E;
+}
+#footer_menu ul{
+	display:inline-block;
+	list-style: none;
+	margin: 0 auto;
+    padding-left: 0;
+    text-align: center;
+    width: auto;
+
+}
+#footer_menu li {
+	float: left;
+	padding:0 8px;
+	position: relative;
+
+}
+#footer_menu a {
+	color: #FFFFFF;
+    display: block;
+    font-family: Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 0.6px;
+    text-decoration: none;
+    text-transform: uppercase;
+	color: #2EFE2E;
+}
+#footer_menu a:hover, .current_page_ancestor a, .current_page_parent a, .current_page_item a{
+	color: #2EFE2E;
+}
+#footer_menu ul ul {
+	background-color:#444444;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	display: none;
+	float: left;
+	position: absolute;
+		top: 30px;
+		left: 0;
+	z-index: 99999;
+}
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
