@@ -42,9 +42,10 @@ function lakefront_chophouse_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
-	// This theme uses wp_nav_menu() in one location.
+	// This allows two locations for menus
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'lakefront_chophouse' ),
+		'footer' => esc_html__( 'Footer', 'lakefront_chophouse' ),
 	) );
 
 	/*
