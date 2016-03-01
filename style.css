@@ -671,7 +671,7 @@ a:active {
     padding: 0;
     text-align:center;
     width:100%;
-	color: #2EFE2E;
+	
 }
 #footer_menu ul{
 	display:inline-block;
@@ -689,7 +689,7 @@ a:active {
 
 }
 #footer_menu a {
-	color: #FFFFFF;
+	color: #000000;
     display: block;
     font-family: Helvetica, sans-serif;
     font-size: 13px;
@@ -697,10 +697,10 @@ a:active {
     letter-spacing: 0.6px;
     text-decoration: none;
     text-transform: uppercase;
-	color: #2EFE2E;
+	
 }
 #footer_menu a:hover, .current_page_ancestor a, .current_page_parent a, .current_page_item a{
-	color: #2EFE2E;
+	color: #000000;
 }
 #footer_menu ul ul {
 	background-color:#444444;
