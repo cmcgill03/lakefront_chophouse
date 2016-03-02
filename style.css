@@ -32,6 +32,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Accessibility
 # Alignments
 # Clearings
+# Header
 # Widgets
 # Content
 	## Posts and pages
@@ -799,6 +800,42 @@ a:active {
 .site-content:after,
 .site-footer:after {
 	clear: both;
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+.site-header {
+	background-color: #000;
+}
+
+.site-branding {
+	text-align: center;
+	font-family: 'Lobster', cursive;
+	line-height: 20px;
+	
+}
+
+.main-navigation {
+	padding: 20px;
+	font-size: 20px;
+	
+}
+
+.site-title {
+	font-size: 50px;
+	color: #FFF;
+}
+
+.site-title a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.site-description {
+	font-size: 30px;
+	color: #FFF;
 }
 
 /*--------------------------------------------------------------
