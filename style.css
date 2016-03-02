@@ -555,50 +555,54 @@ a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-.main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
-}
 
-.main-navigation ul {
-	display: none;
+.main-navigation .menu {
+    display: block;
+    margin: 0 auto 0;
+    padding: 0;
+    text-align:center;
+    width:100%;
+	
+}
+.main-navigation ul{
+	display:inline-block;
 	list-style: none;
-	margin: 0;
-	padding-left: 0;
-}
+	margin: 0 auto;
+    padding-left: 0;
+    text-align: center;
+    width: auto;
 
+}
 .main-navigation li {
 	float: left;
+	padding:0 8px;
 	position: relative;
-}
 
+}
 .main-navigation a {
-	display: block;
-	text-decoration: none;
+	color: #FFFFFF;
+    display: block;
+    font-family: Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    letter-spacing: 0.6px;
+    text-decoration: none;
+    text-transform: uppercase;
+	
 }
-
+.main-navigation a:hover, .current_page_ancestor a, .current_page_parent a, .current_page_item a{
+	color: #000000;
+	text-decoration: underline;
+}
 .main-navigation ul ul {
+	background-color:#444444;
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	display: none;
 	float: left;
 	position: absolute;
-	top: 1.5em;
-	left: -999em;
+		top: 30px;
+		left: 0;
 	z-index: 99999;
-}
-
-.main-navigation ul ul ul {
-	left: -999em;
-	top: 0;
-}
-
-.main-navigation ul ul a {
-	width: 200px;
-}
-
-.main-navigation ul ul li {
-
 }
 
 .main-navigation li:hover > a,
@@ -702,6 +706,7 @@ a:active {
 }
 #footer_menu a:hover, .current_page_ancestor a, .current_page_parent a, .current_page_item a{
 	color: #000000;
+	text-decoration: underline;
 }
 #footer_menu ul ul {
 	background-color:#444444;
@@ -820,7 +825,6 @@ a:active {
 .main-navigation {
 	padding: 20px;
 	font-size: 20px;
-	
 }
 
 .site-title {
@@ -832,6 +836,12 @@ a:active {
 	text-decoration: none;
 	color: inherit;
 }
+
+.site-title a:hover,
+.site-title a:focus {
+	text-decoration:underline;
+}
+
 
 .site-description {
 	font-size: 30px;
