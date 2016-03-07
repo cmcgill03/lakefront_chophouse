@@ -560,8 +560,9 @@ a:active {
     display: block;
     margin: 0 auto 0;
     padding: 0;
-    text-align:center;
+    float:center;
     width:100%;
+	
 	
 }
 .main-navigation ul{
@@ -574,7 +575,7 @@ a:active {
 
 }
 .main-navigation li {
-	float: left;
+	float: center;
 	padding:0 8px;
 	position: relative;
 
