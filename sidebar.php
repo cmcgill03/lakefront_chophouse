@@ -1,7 +1,7 @@
 <?php
 /**
  * The sidebar containing the main widget area.
- *
+ * test change
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package lakefront_chophouse
