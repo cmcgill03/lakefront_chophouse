@@ -557,31 +557,26 @@ a:active {
 --------------------------------------------------------------*/
 
 .main-navigation .menu {
-    display: block;
-    margin: 0 auto 0;
-    padding: 0;
-    float:center;
-    width:100%;
-	
-	
+    display: inline-block;
+    float:right;
+	padding-top:55px;
+	padding-right:100px;
 }
+
 .main-navigation ul{
 	display:inline-block;
 	list-style: none;
-	margin: 0 auto;
-    padding-left: 0;
     text-align: center;
-    width: auto;
-
 }
+
 .main-navigation li {
-	float: center;
+	float: left;
 	padding:0 8px;
 	position: relative;
-
 }
+
 .main-navigation a {
-	color: #FFFFFF;
+	color: #FFF;
     display: block;
     font-family: Helvetica, sans-serif;
     font-size: 13px;
@@ -592,7 +587,7 @@ a:active {
 	
 }
 .main-navigation a:hover, .current_page_ancestor a, .current_page_parent a, .current_page_item a{
-	color: #000000;
+	color: #FFF;
 	text-decoration: underline;
 }
 .main-navigation ul ul {
@@ -705,7 +700,7 @@ a:active {
     text-transform: uppercase;
 	
 }
-#footer_menu a:hover, .current_page_ancestor a, .current_page_parent a, .current_page_item a{
+#footer_menu a:hover{
 	color: #000000;
 	text-decoration: underline;
 }
@@ -814,23 +809,25 @@ a:active {
 
 .site-header {
 	background-color: #000;
+	height: 90px;
 }
 
 .site-branding {
 	text-align: center;
 	font-family: 'Lobster', cursive;
-	line-height: 20px;
-	
+	line-height:0px;
+	padding:0px;
 }
 
 .main-navigation {
-	padding: 20px;
 	font-size: 20px;
 }
 
 .site-title {
 	font-size: 50px;
 	color: #FFF;
+	float: left;
+	padding-left: 50px;
 }
 
 .site-title a {
@@ -843,11 +840,6 @@ a:active {
 	text-decoration:underline;
 }
 
-
-.site-description {
-	font-size: 30px;
-	color: #FFF;
-}
 
 /*--------------------------------------------------------------
 # Widgets
