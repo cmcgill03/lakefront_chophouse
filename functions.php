@@ -111,10 +111,16 @@ function lakefront_chophouse_widgets_init() {
 }
 add_action( 'widgets_init', 'lakefront_chophouse_widgets_init' );
 
+
+
+
+
+
+
 /*Enqueue goolge Fonts*/
 function google_font(){
 	/*Registers the google font and then enqueues it into the theme */
-	wp_register_style('google_font', 'https://fonts.googleapis.com/css?family=Lobster');
+	wp_register_style('google_font', 'https://fonts.googleapis.com/css?family=Lobster', 'https://fonts.googleapis.com/css?family=Lato');
 	wp_enqueue_style('google_font');
 }
 add_action ('wp_enqueue_scripts', 'google_font');
