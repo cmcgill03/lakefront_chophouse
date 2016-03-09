@@ -1,22 +1,23 @@
 /*
 Theme Name: lakefront_chophouse
-Theme URI: http://google.com
+Theme URI: underscores
+Theme URI: google
 Author: Adam, Cameron, Connor
 Description: The theme for the new restaurant, The Lakefront Chophouse
 Version: 0.0.1
 License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+License URI: license
 Text Domain: lakefront_chophouse
 Tags:
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-lakefront_chophouse is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+lakefront_chophouse is based on Underscores underscores (C) 2012-2015 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+Nicolas Gallagher and Jonathan Neal normalize
 */
 
 /*--------------------------------------------------------------
@@ -559,50 +560,49 @@ a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-
-.main-navigation .menu {
-    display: inline-block;
-    float:right;
-	padding-top:55px;
-	padding-right:100px;
+.main-navigation {
+	height: 2.25em;
+	line-height: 2.25em;
+	margin: 0.75 0 3em;
+	float:right;
 }
 
-.main-navigation ul{
-	display:inline-block;
+.main-navigation ul {
 	list-style: none;
-    text-align: center;
+	margin: auto;
+	width: auto;
 }
 
-.main-navigation li {
-	float: left;
-	padding:0 8px;
-	position: relative;
+.main-navigation ul li {
+	display: inline-block;
+	float: right;
 }
 
 .main-navigation a {
-	color: #FFF;
-    display: block;
-    font-family: Helvetica, sans-serif;
-    font-size: 13px;
-    font-weight: 300;
-    letter-spacing: 0.6px;
-    text-decoration: none;
-    text-transform: uppercase;
-	
+	display: block;
+	text-decoration: none;
 }
-.main-navigation a:hover, .current_page_ancestor a, .current_page_parent a, .current_page_item a{
-	color: #FFF;
-	text-decoration: underline;
-}
+
 .main-navigation ul ul {
-	background-color:#444444;
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	display: none;
 	float: left;
 	position: absolute;
-		top: 30px;
-		left: 0;
+	top: 1.5em;
+	left: -999em;
 	z-index: 99999;
+}
+
+.main-navigation ul ul ul {
+	left: -999em;
+	top: 0;
+}
+
+.main-navigation ul ul a {
+	width: 200px;
+}
+
+.main-navigation ul ul li {
+
 }
 
 .main-navigation li:hover > a,
@@ -670,53 +670,21 @@ a:active {
 	width: 50%;
 }
 
-#footer_menu .menu {
-    display: block;
-    margin: 0 auto 0;
-    padding: 0;
-    text-align:center;
-    width:100%;
-	
+#footer_menu {
+	height: 2.25em;
+	line-height: 2.25em;
+	margin: 0.75 0 3em;
+	float:left;
 }
-#footer_menu ul{
-	display:inline-block;
+
+#footer_menu ul {
 	list-style: none;
-	margin: 0 auto;
-    padding-left: 0;
-    text-align: center;
-    width: auto;
+	margin: auto;
+	width: auto;
+}
 
-}
-#footer_menu li {
-	float: left;
-	padding:0 8px;
-	position: relative;
-
-}
-#footer_menu a {
-	color: #000000;
-    display: block;
-    font-family: Helvetica, sans-serif;
-    font-size: 13px;
-    font-weight: 300;
-    letter-spacing: 0.6px;
-    text-decoration: none;
-    text-transform: uppercase;
-	
-}
-#footer_menu a:hover{
-	color: #000000;
-	text-decoration: underline;
-}
-#footer_menu ul ul {
-	background-color:#444444;
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	display: none;
-	float: left;
-	position: absolute;
-		top: 30px;
-		left: 0;
-	z-index: 99999;
+#footer_menu ul li {
+	display: inline-block;
 }
 
 /*--------------------------------------------------------------
@@ -813,22 +781,17 @@ a:active {
 
 .site-header {
 	background-color: #000;
-	height: 90px;
+	height: 5.8em;
 }
 
 .site-branding {
 	text-align: center;
 	font-family: 'Lobster', cursive;
 	line-height:0px;
-	padding:0px;
-}
-
-.main-navigation {
-	font-size: 20px;
 }
 
 .site-title {
-	font-size: 50px;
+	font-size: 3.5em;
 	color: #FFF;
 	float: left;
 	padding-left: 50px;
@@ -844,6 +807,23 @@ a:active {
 	text-decoration:underline;
 }
 
+.main-navigation {
+	font-size: 1.25em;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+.site-footer {
+	height: 3.5em;
+	background-color: black;
+}
+.site-info {
+	padding: 1em;
+	float:right;
+	color: white;
+}
 
 /*--------------------------------------------------------------
 # Widgets
@@ -860,6 +840,24 @@ a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+#main {
+	margin: auto;
+	padding: 0;
+	width: 93.75%;
+}
+
+#primary {
+	float: left;
+	margin-bottom: 2em;
+	width: 66.6%;
+}
+
+#secondary {
+	float: right;
+	margin-bottom: 2em;
+	width: 26.6%;
+}
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
