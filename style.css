@@ -571,6 +571,7 @@ a:active {
 	list-style: none;
 	margin: auto;
 	width: auto;
+	font-family: 'Lato', sans-serif; /*doesn't workkkk*/
 }
 
 .main-navigation ul li {
@@ -587,7 +588,8 @@ a:active {
 }
 
 .main-navigation ul li a:hover{
-	color: #BE3F48;
+	color: #ED2500;
+	text-decoration: underline;
 }
 
 /*
@@ -639,6 +641,7 @@ a:active {
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_ancestor > a,
 .main-navigation .current-menu-ancestor > a {
+	color: #ED2500;
 }
 
 /* Small menu. */
@@ -703,7 +706,15 @@ a:active {
 }
 
 #footer_menu  ul li a:hover{
-	color: #BE3F48;
+	color: #ED2500;
+	text-decoration: underline;
+}
+
+#footer_menu .current_page_item > a,
+#footer_menu .current-menu-item > a,
+#footer_menu .current_page_ancestor > a,
+#footer_menu .current-menu-ancestor > a {
+	color: #ED2500;
 }
 
 /*--------------------------------------------------------------
@@ -800,20 +811,18 @@ a:active {
 
 .site-header {
 	background-color: #000;
-	height: 5.8em;
-}
-
-.site-branding {
-	text-align: center;
-	font-family: 'Lobster', cursive;
-	line-height:0px;
+	height: auto;
 }
 
 .site-title {
+	font-family: 'Lobster', cursive;
+	line-height:0;
 	font-size: 3.5em;
 	color: #FFF;
 	float: left;
-	padding-left: 50px;
+	padding-left: 1.5em;
+	padding-top: 0.8em;
+	margin: auto;
 }
 
 .site-title a {
@@ -840,7 +849,15 @@ a:active {
 	border-top: 1px solid #FFF 50%;
 	padding: 1em;
 	text-align: center;
-	color: white;
+	color: #FFF;
+}
+
+.site-info a{
+	color: #FFF;
+}
+
+.site-info a:hover{
+	color: #ED2500
 }
 
 /*--------------------------------------------------------------
