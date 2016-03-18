@@ -125,6 +125,12 @@ function google_font(){
 }
 add_action ('wp_enqueue_scripts', 'google_font');
 
+/*Enqueue font awesome*/
+function enqueue_our_required_stylesheets(){
+	wp_enqueue_style('font-awesome', get_template_directory_uri() . '/css/font-awesome.css'); 
+}
+add_action('wp_enqueue_scripts','enqueue_our_required_stylesheets');
+
 /**
  * Enqueue scripts and styles.
  */
@@ -134,7 +140,11 @@ function lakefront_chophouse_scripts() {
 	wp_enqueue_script( 'lakefront_chophouse-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'lakefront_chophouse-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+	
+	wp_enqueue_script('backstretch', get_template_directory_uri() . '/js/backstretch.js', array ('jquery'), '2.0.4', true );
 
+	wp_enqueue_script('my-scripts', get_template_directory_uri() . '/js/scripts.js', array ('jquery'), '1.0.0', true );
+	
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
@@ -165,3 +175,8 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/** Load the options pages.
+*/
+
+require get_template_directory() .'/inc/options.php';

@@ -564,7 +564,7 @@ a:active {
 	font-size: 1.25em;
 	margin: 0.75 0 3em;
 	float: right;
-	padding: 2.5em 2em 0;
+	padding: 2.5em 5em 0;
 }
 
 .main-navigation ul {
@@ -592,14 +592,19 @@ a:active {
 	text-decoration: underline;
 }
 
-/*
+
+
+
 .main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
 	position: absolute;
 	top: 1.5em;
 	left: -999em;
 	z-index: 99999;
+}
+
+.main-navigation ul ul li {
+	display: inline-block;
 }
 
 .main-navigation ul ul ul {
@@ -610,7 +615,7 @@ a:active {
 .main-navigation ul ul a {
 	width: 200px;
 }
-*/
+
 .main-navigation ul ul li {
 
 }
@@ -681,9 +686,11 @@ a:active {
 	width: 50%;
 }
 
+
 #footer_menu {
 	margin: 0.75 0 3em;
 	text-align: center;
+	display: none;
 }
 
 #footer_menu  ul {
@@ -716,6 +723,7 @@ a:active {
 #footer_menu .current-menu-ancestor > a {
 	color: #ED2500;
 }
+
 
 /*--------------------------------------------------------------
 # Accessibility
