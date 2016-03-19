@@ -919,6 +919,7 @@ a:active {
 	border-width: 2px;
 	border-color: black;
 	border-style: solid;
+	padding: 0.3em 1em;
 }
 
 /*--------------------------------------------------------------
