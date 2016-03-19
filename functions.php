@@ -126,8 +126,8 @@ function google_font(){
 add_action ('wp_enqueue_scripts', 'google_font');
 
 /*Enqueue font awesome*/
-function enqueue_our_required_stylesheets(){
-	wp_enqueue_style('font-awesome', get_template_directory_uri() . '/css/font-awesome.css'); 
+function enqueue_our_required_stylesheets() {
+	wp_enqueue_style('font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'); 
 }
 add_action('wp_enqueue_scripts','enqueue_our_required_stylesheets');
 

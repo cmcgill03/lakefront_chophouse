@@ -663,16 +663,40 @@ a:active {
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-	display: block;
+	display: none;
 }
 
-@media screen and (min-width: 37.5em) {
+@media screen and (max-width: 695px) {
 	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
 		display: block;
 	}
+	.main-navigation ul {
+		display: none;
+	}
+	
+	.fa-bars {
+		color: white;
+		float: center;
+	}
+	
+	.menu-toggle {
+		background-color: inherit;
+		border: none;
+		box-shadow: none;
+		font-size: 250%;
+		text-shadow: none;
+		padding: 0;
+		line-height:0;
+	}
+	
+	.menu-toggle:hover {
+		background-color: inherit;
+		box-shadow: none;
+		text-shadow: none;
+		padding: 0;
+		line-height: 0;
+	}
+	
 }
 
 .site-main .comment-navigation,
@@ -889,6 +913,12 @@ a:active {
 /* Make sure select elements fit in widgets. */
 .widget select {
 	max-width: 100%;
+}
+
+@ media screen and (max-width: 928px;) {
+	.widget {
+		font-size: 0.8em;
+	}
 }
 
 /*--------------------------------------------------------------
