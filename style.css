@@ -564,7 +564,8 @@ a:active {
 	font-size: 1.25em;
 	margin: 0.75 0 3em;
 	float: right;
-	padding: 2.5em 5em 0;
+	padding-top: 1.5em;
+	padding-right: 2em;
 }
 
 .main-navigation ul {
@@ -592,8 +593,17 @@ a:active {
 	text-decoration: underline;
 }
 
+.nav-menu {
+	position: relative;
+	padding:0px;
+}
 
-
+.sub-menu .menu-item {
+	background-color: black;
+	width: auto;
+	color: white;
+	height: auto;
+}
 
 .main-navigation ul ul {
 	float: left;
@@ -613,11 +623,12 @@ a:active {
 }
 
 .main-navigation ul ul a {
-	width: 200px;
+	width: auto;
+	padding-left:0;
 }
 
 .main-navigation ul ul li {
-
+	padding-left: 0;
 }
 
 .main-navigation li:hover > a,
@@ -824,13 +835,13 @@ a:active {
 
 .site-title {
 	font-family: 'Lobster', cursive;
-	line-height:0;
 	font-size: 3.5em;
 	color: #FFF;
 	float: left;
 	padding-left: 1.5em;
-	padding-top: 0.8em;
+	padding-top: 0;
 	margin: auto;
+	text-align: center;
 }
 
 .site-title a {
@@ -883,9 +894,12 @@ a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+#content {
+	padding: 3em;
+}
+
 #main {
 	margin: auto;
-	padding: 0;
 	width: 93.75%;
 }
 
@@ -893,12 +907,18 @@ a:active {
 	float: left;
 	margin-bottom: 2em;
 	width: 66.6%;
+	border-width: 2px;
+	border-color: black;
+	border-style: solid;
 }
 
 #secondary {
 	float: right;
 	margin-bottom: 2em;
 	width: 26.6%;
+	border-width: 2px;
+	border-color: black;
+	border-style: solid;
 }
 
 /*--------------------------------------------------------------
