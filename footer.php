@@ -13,26 +13,22 @@
 
 	</div><!-- #content -->
 
-/** 
-Fixed a typo, lakefront chophouse was mispelt in the code
-*/
-
 /**
-Publishes content into the footer menu
+* Publishes content into the footer menu
 */
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div id="footer_menu"><?php wp_nav_menu( array( 'menu' => 'menu-footer', 'lakefront_chophouse' => 'footer' ) ); ?></div>
 		<div class="site-info">
 /**
-This function makes the text Proudly published by WordPress appear in hyperlink form
+* This function makes the text Proudly published by WordPress appear in hyperlink form
 */
 
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'lakefront_chophouse' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'lakefront_chophouse' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
 			
 /**
-This function is looking in the widget id and widget class, it is displaying the theme name as lakefront_chophouse and has a hyperlink to Underscores.me 
+* This function is looking in the widget id and widget class, it is displaying the theme name as lakefront_chophouse and has a hyperlink to Underscores.me 
 */
 
 			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'lakefront_chophouse' ), 'lakefront_chophouse', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
