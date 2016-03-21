@@ -14,7 +14,7 @@
 	</div><!-- #content -->
 
 <!--
-* Publishes content into the footer menu
+* Publishes content into the footer menu, provides links for lakefront chophouses social media pages 
 -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
