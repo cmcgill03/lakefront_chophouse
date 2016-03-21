@@ -903,6 +903,18 @@ a:active {
 	color: #ED2500
 }
 
+.sm-icons {
+	float: center;
+	text-align: center;
+	font-size: 350%;
+}
+
+.sm-icons a,
+.sm-icons a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/

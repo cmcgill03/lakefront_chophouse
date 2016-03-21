@@ -18,6 +18,12 @@
 -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="sm-icons">
+		<a href="https://www.facebook.com/" class="fa fa-facebook-square"></a>
+		<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+		<a href="https://www.twitter.com/" class="fa fa-twitter-square"></a>
+		<a href="https://www.yelp.com/" class="fa fa-yelp"></a>
+		</div>
 		<div id="footer_menu"><?php wp_nav_menu( array( 'menu' => 'menu-footer', 'lakefront_chophouse' => 'footer' ) ); ?></div>
 		<div class="site-info">
 <!--
