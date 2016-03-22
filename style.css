@@ -566,7 +566,6 @@ a:active {
 	font-size: 1.25em;
 	margin: 0.75 0 3em;
 	float: right;
-	padding-top: 1.5em;
 	padding-right: 2em;
 }
 
@@ -670,17 +669,53 @@ a:active {
 	display: none;
 }
 
-@media screen and (max-width: 695px) {
-	.menu-toggle {
-		display: block;
+
+@media screen and (max-width: 1125px) {
+	
+	#secondary.widget-area{
+	clear: left;
+	font-size: 1em;
+	float: left;
+	width: 50%;
 	}
-	.main-navigation ul {
+	
+	#primary{
+	width: 100%;}
+	
+	
+	
+	
+}
+@media screen and (max-width: 695px) {
+
+
+	
+	.fa-bars{
+		display: block;
+		font-size: 150%;
+		margin: 1em auto;
+	}
+	
+	.nav-menu {
 		display: none;
 	}
 	
-	.fa-bars {
+
+	.main-navigation.toggled .nav-menu {
+	  display: block;
+
+	}
+	
+	.main-navigation.toggled .nav-menu ul li{
+	  display: block;
+		text-align:center;
+	}
+	
+	
+	
+	.nav-menui li {
+		display: block;
 		color: white;
-		float: center;
 	}
 	
 	.menu-toggle {
@@ -691,6 +726,9 @@ a:active {
 		text-shadow: none;
 		padding: 0;
 		line-height:0;
+		display: block;
+	        color: white;
+	        float: center;
 	}
 	
 	.menu-toggle:hover {
@@ -699,9 +737,17 @@ a:active {
 		text-shadow: none;
 		padding: 0;
 		line-height: 0;
+		float: center;
 	}
 	
 }
+
+@media screen and (max-width: 695px) {
+	#secondary {
+	font-size: 0.5em;
+	}
+}
+
 
 .site-main .comment-navigation,
 .site-main .posts-navigation,
@@ -959,7 +1005,7 @@ a:active {
 }
 
 #secondary {
-	float: right;
+        float:right;
 	margin-bottom: 2em;
 	width: 26.6%;
 	border-width: 2px;
