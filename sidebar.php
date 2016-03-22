@@ -12,6 +12,10 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 }
 ?>
 
+<!--
+* This Conditional Tag checks if a given sidebar is active, either true or false
+-->
+
 <aside id="secondary" class="widget-area" role="complementary">
 	<?php dynamic_sidebar( 'sidebar-1' ); ?>
 </aside><!-- #secondary -->
