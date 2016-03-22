@@ -18,6 +18,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <?php $options=get_option( 'lakefront_options_settings' );?>
+<?php wp_enqueue_script('jquery'); ?>
 <?php wp_head(); ?>
 
 
@@ -30,6 +31,20 @@
 	color: <?php echo $options['lakefront_radio_bodycolor']; ?>
 }
 </style>
+
+<script type="text/javascript">// <![CDATA[
+jQuery(document).ready(function(){
+  jQuery('#slidebx').bxSlider({
+    mode: 'horizontal',
+    infiniteLoop: true,
+    speed: 2000,
+    pause: 8000,
+    auto: true,
+    pager: false,
+    controls: true
+  });
+});
+// ]]></script>
 
 </head>
 
@@ -64,4 +79,13 @@
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
+	<ul id="slidebx">
+		<li>  <img src="wp-content\themes\lakefront_chophouse\images\slider2.jpg" /> <div class="caption1"> 
+			<span>Image 1</span>
+			 </li>
+		<li>  <img src="wp-content\themes\lakefront_chophouse\images\slider3.jpg" /><div class="caption1"><span>Image 1</span></li>
+		<li>  <img src="wp-content\themes\lakefront_chophouse\images\slider2.jpg" /><div class="caption1"><span>Image 2</span></li>
+		<li>  <img src="wp-content\themes\lakefront_chophouse\images\slider1.jpg" /><div class="caption1"><span>Image 3</span></li>
+	</ul>
+	
 	<div id="content" class="site-content">

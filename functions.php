@@ -111,6 +111,15 @@ function lakefront_chophouse_widgets_init() {
 }
 add_action( 'widgets_init', 'lakefront_chophouse_widgets_init' );
 
+// LOAD BX SLIDER
+// *********************************************************
+function loadbxslider()
+{
+    wp_enqueue_style('bxstyle', '/wp-content/themes/lakefront_chophouse/jquery.bxslider.css');
+    wp_enqueue_script('bxscript', '/wp-content/themes/lakefront_chophouse/js/jquery.bxSlider.min.js', array('jquery'));
+}
+add_action('init', 'loadbxslider');
+
 
 /*Enqueue goolge Fonts*/
 function google_font(){

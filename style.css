@@ -574,7 +574,8 @@ a:active {
 	list-style: none;
 	margin: auto;
 	width: auto;
-	font-family: 'Lato', sans-serif; /*doesn't workkkk*/
+	font-family: 'Lato', sans-serif;
+	padding-right: 3em;
 }
 
 .main-navigation ul li {
@@ -617,6 +618,7 @@ a:active {
 
 .main-navigation ul ul li {
 	display: inline-block;
+	width: auto;
 }
 
 .main-navigation ul ul ul {
