@@ -16,6 +16,10 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+			
+<!--
+* Function to call upon the primary header area
+-->
 
 		<?php
 		if ( have_posts() ) :
@@ -24,7 +28,7 @@ get_header(); ?>
 				<header>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</header>
-
+/*If there is posts on the homepage then display the title */
 			<?php
 			endif;
 
@@ -47,6 +51,10 @@ get_header(); ?>
 			get_template_part( 'template-parts/content', 'none' );
 
 		endif; ?>
+		
+<!--
+* If there is no content in the template then end the loop
+-->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
