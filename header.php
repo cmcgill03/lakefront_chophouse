@@ -21,6 +21,10 @@
 <?php wp_enqueue_script('jquery'); ?>
 <?php wp_head(); ?>
 
+<!--
+*  Enqueue options page in header 
+-->
+
 
 <style>
 .site-title {
@@ -31,6 +35,10 @@
 	color: <?php echo $options['lakefront_radio_bodycolor']; ?>
 }
 </style>
+
+<!--
+*  fetching lakefront_radio_titlecolor and lakefront_radio_bodycolor from the options file
+-->
 
 <script type="text/javascript">// <![CDATA[
 jQuery(document).ready(function(){
@@ -48,7 +56,9 @@ jQuery(document).ready(function(){
 
 </head>
 
-
+/**
+ * Set parameters for the slide via jquery, javascript
+ */
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
@@ -57,6 +67,10 @@ jQuery(document).ready(function(){
 		<header id="masthead" class="site-header" role="banner">
 		
 		<div class="site-branding">
+			
+<!--
+*  button at the bottom of the page directing you to the next page
+-->
 
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
