@@ -12,7 +12,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
+	</header><!-- Display the classes for the post div .entry-header for  -->
 
 	<div class="entry-content">
 		<?php
@@ -23,7 +23,7 @@
 				'after'  => '</div>',
 			) );
 		?>
-	</div><!-- .entry-content -->
+	</div><!-- .entry-content for pages-->
 
 	<footer class="entry-footer">
 		<?php
