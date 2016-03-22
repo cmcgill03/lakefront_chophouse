@@ -22,8 +22,12 @@
 
 
 <style>
-#primary {
-	color: <?php echo $options['lakefront_radio_field']; ?>
+.site-title {
+	color: <?php echo $options['lakefront_radio_titlecolor']; ?>
+}
+
+.entry-content {
+	color: <?php echo $options['lakefront_radio_bodycolor']; ?>
 }
 </style>
 
@@ -41,9 +45,9 @@
 
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php echo $options['lakefront_text_field'];?></a></h1>
+				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php echo $options['lakefront_text_title'];?></a></h1>
 			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php echo $options['lakefront_text_field'];?></a></p>
+				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php echo $options['lakefront_text_title'];?></a></p>
 			<?php
 			endif;
 

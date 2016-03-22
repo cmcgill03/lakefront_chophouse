@@ -12,17 +12,20 @@
 ?>
 
 	</div><!-- #content -->
+	
+<!-- sets the variable options from the array in the options page -->	
+<?php $options=get_option( 'lakefront_options_settings' );?>
 
 <!--
-* Publishes content into the footer menu, provides links for lakefront chophouses social media pages 
+* Publishes content into the footer menu
 -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="sm-icons">
-		<a href="https://www.facebook.com/" class="fa fa-facebook-square"></a>
-		<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
-		<a href="https://www.twitter.com/" class="fa fa-twitter-square"></a>
-		<a href="https://www.yelp.com/" class="fa fa-yelp"></a>
+		<a href="<?php echo $options['lakefront_text_facebook'];?>" class="fa fa-facebook-square"></a>
+		<a href="<?php echo $options['lakefront_text_instagram'];?>" class="fa fa-instagram"></a>
+		<a href="<?php echo $options['lakefront_text_twitter'];?>" class="fa fa-twitter-square"></a>
+		<a href="<?php echo $options['lakefront_text_yelp'];?>" class="fa fa-yelp"></a>
 		</div>
 		<div id="footer_menu"><?php wp_nav_menu( array( 'menu' => 'menu-footer', 'lakefront_chophouse' => 'footer' ) ); ?></div>
 		<div class="site-info">
