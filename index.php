@@ -28,7 +28,7 @@ get_header(); ?>
 				<header>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</header>
-/*If there is posts on the homepage then display the title */
+<!-- If there is posts on the homepage then display the title -->
 			<?php
 			endif;
 

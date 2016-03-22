@@ -1,88 +1,88 @@
 <?php
 
 function lakefront_add_submenu() {
-	add_submenu_page( 'themes.php', 'My Super Awesome Options Page', 'Theme Options', 'manage_options', 'theme_options', 'my_theme_options_page');
+	add_submenu_page( 'themes.php', 'Lakefront Chophouse Options Page', 'Theme Options', 'manage_options', 'theme_options', 'my_theme_options_page');
 }
 
-add_action( 'admin_menu', 'cd_add_submenu' );
+add_action( 'admin_menu', 'lakefront_add_submenu' );
 
-function cd_settings_init() {
+function lakefront_settings_init() {
 	
-	register_setting( 'theme_options', 'cd_options_settings' );
+	register_setting( 'theme_options', 'lakefront_options_settings' );
 	
 	add_settings_section(
-		'cd_options_page_section', //  the id
-		'Your section title', // Section Title
-		'cd_options_page_section_callback', //$callback (function we will create)
+		'lakefront_options_page_section', //  the id
+		'Options Page', // Section Title
+		'lakefront_options_page_section_callback', //$callback (function we will create)
 		'theme_options'// page (matches menu_slug set in add_submenu_page)
 		);
 	
-	function cd_options_page_section_callback() { 
-		echo 'A description and detail about the section.' ;
+	function lakefront_options_page_section_callback() { 
+		echo 'Welcome to the options page! Here you can...' ;
 	}// the function created in add_settings_section
 	
 	add_settings_field( 
-		'cd_text_field', // id
+		'lakefront_text_field', // id
 		'Enter your text', // title
-		'cd_text_field_render', // $callback (function we will create)
+		'lakefront_text_field_render', // $callback (function we will create)
 		'theme_options', // page (matches menu_slug)
-		'cd_options_page_section'// section (matches section in add_settings_section)
+		'lakefront_options_page_section'// section (matches section in add_settings_section)
 	);
 		
-	function cd_text_field_render() { 
-		$options=get_option( 'cd_options_settings' );
+	function lakefront_text_field_render() { 
+		$options=get_option( 'lakefront_options_settings' );
 		?>
-		<input type="text" name="cd_options_settings[cd_text_field]" value=" 
+		<input type="text" name="lakefront_options_settings[lakefront_text_field]" value=" 
 		<?php
-		if (isset($options['cd_text_field'])) echo $options['cd_text_field']; ?>"
+		if (isset($options['lakefront_text_field'])) echo $options['lakefront_text_field']; ?>"
 		/>
 		<?php
 	}
 	
 	add_settings_field(
-		'cd_checkbox_field',
+		'lakefront_checkbox_field',
 		'Check your preference',
-		'cd_checkbox_field_render',
+		'lakefront_checkbox_field_render',
 		'theme_options',
-		'cd_options_page_section'
+		'lakefront_options_page_section'
 	);
 	
-	function cd_checkbox_field_render() {
-		$options = get_option( 'cd_options_settings' );
+	function lakefront_checkbox_field_render() {
+		$options = get_option( 'lakefront_options_settings' );
 		?>
-		<input type="checkbox" name="cd_options_settings[cd_checkbox_field]" 
+		<input type="checkbox" name="lakefront_options_settings[lakefront_checkbox_field]" 
 		<?php 
-		if (isset($options['cd_checkbox_field']))checked( 'on', ($options['cd_checkbox_field']) ) ; ?> value="on" />
+		if (isset($options['lakefront_checkbox_field']))checked( 'on', ($options['lakefront_checkbox_field']) ) ; ?> value="on" />
 		<label>Turn it On</label>
 		<?php
 	}
 	
 	add_settings_field(
-		'cd_radio_field',
+		'lakefront_radio_field',
 		'Choose an option',
-		'cd_radio_field_render',
+		'lakefront_radio_field_render',
 		'theme_options',
-		'cd_options_page_section'
+		'lakefront_options_page_section'
 	);
 	
-	function cd_radio_field_render() {
-		$options = get_option( 'cd_options_settings' );
+	function lakefront_radio_field_render() {
+		$options = get_option( 'lakefront_options_settings' );
 		?>
-		<input type="radio" name="cd_options_settings[cd_radio_field]" <?php if (isset($options
-		['cd_radio_field'])) checked( $options['cd_radio_field'], black ); ?> value="black" /> <label>Black</label><br
+		<input type="radio" name="lakefront_options_settings[lakefront_radio_field]" <?php if (isset($options
+		['lakefront_radio_field'])) checked( $options['lakefront_radio_field'], black ); ?> value="black" /> <label>Black</label><br
 		/>
-		<input type="radio" name="cd_options_settings[cd_radio_field]" <?php if (isset($options
-		['cd_radio_field'])) checked( $options['cd_radio_field'], blue ); ?> value="blue" /> <label>Blue</label><br
+		<input type="radio" name="lakefront_options_settings[lakefront_radio_field]" <?php if (isset($options
+		['lakefront_radio_field'])) checked( $options['lakefront_radio_field'], blue ); ?> value="blue" /> <label>Blue</label><br
 		/>
-		<input type="radio" name="cd_options_settings[cd_radio_field]" <?php if (isset($options
-		['cd_radio_field'])) checked( $options['cd_radio_field'], white ); ?> value="white" /> <label>White</label>
+		<input type="radio" name="lakefront_options_settings[lakefront_radio_field]" <?php if (isset($options
+		['lakefront_radio_field'])) checked( $options['lakefront_radio_field'], white ); ?> value="white" /> <label>White</label>
 		<?php
 	}
 	
 	function my_theme_options_page(){
 		?>
 		<form action="options.php" method="post">
-			<h2>My Awesome Options Page</h2>
+			<h2>LAKEFRONT CHOPHOUSE</h2>
 			<?php
 			settings_fields( 'theme_options' );
 			do_settings_sections( 'theme_options' );
@@ -93,6 +93,6 @@ function cd_settings_init() {
 	}
 }
 
-add_action( 'admin_init', 'cd_settings_init' );
+add_action( 'admin_init', 'lakefront_settings_init' );
 
 ?>

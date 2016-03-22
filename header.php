@@ -17,13 +17,13 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-<?php $options=get_option( 'cd_options_settings' );?>
+<?php $options=get_option( 'lakefront_options_settings' );?>
 <?php wp_head(); ?>
 
 
 <style>
 #primary {
-	color: <?php echo $options['cd_radio_field']; ?>
+	color: <?php echo $options['lakefront_radio_field']; ?>
 }
 </style>
 
@@ -41,9 +41,9 @@
 
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php echo $options['cd_text_field'];?></a></h1>
+				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php echo $options['lakefront_text_field'];?></a></h1>
 			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php echo $options['cd_text_field'];?></a></p>
+				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php echo $options['lakefront_text_field'];?></a></p>
 			<?php
 			endif;
 
