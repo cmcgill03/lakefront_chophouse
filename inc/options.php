@@ -4,11 +4,24 @@ function lakefront_add_submenu() {
 	add_submenu_page( 'themes.php', 'Lakefront Chophouse Options Page', 'Theme Options', 'manage_options', 'theme_options', 'my_theme_options_page');
 }
 
+/**
+ * This function takes a capability which will be used to determine whether or not a page is included in the menu
+ */
+
 add_action( 'admin_menu', 'lakefront_add_submenu' );
+
+/**
+ * Hooks a function on to a specific action, in this case submenu
+ */
+
 
 function lakefront_settings_init() {
 	
 	register_setting( 'theme_options', 'lakefront_options_settings' );
+	
+/**
+ * Allows registration of theme options in settings 
+ */
 	
 	add_settings_section(
 		'lakefront_options_page_section', //  the id
