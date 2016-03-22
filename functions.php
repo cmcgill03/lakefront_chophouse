@@ -112,11 +112,6 @@ function lakefront_chophouse_widgets_init() {
 add_action( 'widgets_init', 'lakefront_chophouse_widgets_init' );
 
 
-
-
-
-
-
 /*Enqueue goolge Fonts*/
 function google_font(){
 	/*Registers the google font and then enqueues it into the theme */
