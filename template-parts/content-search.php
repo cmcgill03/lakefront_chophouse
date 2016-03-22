@@ -10,9 +10,14 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<!--
+*  print out and add various post-related classes to the div tag.
+-->	
 	<header class="entry-header">
 		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
+<!--
+*  Displays or returns the title of the current post, being bookmark and permalink
+-->
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php lakefront_chophouse_posted_on(); ?>
