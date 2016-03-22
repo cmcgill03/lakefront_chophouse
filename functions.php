@@ -116,7 +116,7 @@ add_action( 'widgets_init', 'lakefront_chophouse_widgets_init' );
 function loadbxslider()
 {
     wp_enqueue_style('bxstyle', '/wp-content/themes/lakefront_chophouse/jquery.bxslider.css');
-    wp_enqueue_script('bxscript', '/wp-content/themes/lakefront_chophouse/js/jquery.bxSlider.min.js', array('jquery'));
+    wp_enqueue_script('bxscript', '/wp-content/themes/lakefront_chophouse/jquery.bxslider.min.js?ver=4.4 ', array('jquery'));
 }
 add_action('init', 'loadbxslider');
 
@@ -146,6 +146,8 @@ function lakefront_chophouse_scripts() {
 	wp_enqueue_script( 'lakefront_chophouse-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 	
 	wp_enqueue_script('backstretch', get_template_directory_uri() . '/js/backstretch.js', array ('jquery'), '2.0.4', true );
+	
+	wp_enqueue_script('scroll', get_template_directory_uri() . '/js/sc.js', array ('jquery'), '1.0.4', true );
 
 	wp_enqueue_script('my-scripts', get_template_directory_uri() . '/js/scripts.js', array ('jquery'), '1.0.0', true );
 	

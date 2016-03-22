@@ -88,13 +88,13 @@ function lakefront_settings_init() {
 		$options = get_option( 'lakefront_options_settings' );
 		?>
 		<input type="radio" name="lakefront_options_settings[lakefront_radio_titlecolor]" <?php if (isset($options
-		['lakefront_radio_titlecolor'])) checked( $options['lakefront_radio_titlecolor'], white ); ?> value="white" /> <label>White</label><br
+		['lakefront_radio_titlecolor'])) checked( $options['lakefront_radio_titlecolor'], 1 ); ?> value="white" /> <label>White</label><br
 		/>
 		<input type="radio" name="lakefront_options_settings[lakefront_radio_titlecolor]" <?php if (isset($options
-		['lakefront_radio_titlecolor'])) checked( $options['lakefront_radio_titlecolor'], blue ); ?> value="blue" /> <label>Blue</label><br
+		['lakefront_radio_titlecolor'])) checked( $options['lakefront_radio_titlecolor'], 2 ); ?> value="blue" /> <label>Blue</label><br
 		/>
 		<input type="radio" name="lakefront_options_settings[lakefront_radio_titlecolor]" <?php if (isset($options
-		['lakefront_radio_titlecolor'])) checked( $options['lakefront_radio_titlecolor'], black ); ?> value="black" /> <label>Black</label>
+		['lakefront_radio_titlecolor'])) checked( $options['lakefront_radio_titlecolor'], 3 ); ?> value="black" /> <label>Black</label>
 		<?php
 	}
 	
@@ -112,13 +112,13 @@ function lakefront_settings_init() {
 		$options = get_option( 'lakefront_options_settings' );
 		?>
 		<input type="radio" name="lakefront_options_settings[lakefront_radio_bodycolor]" <?php if (isset($options
-		['lakefront_radio_bodycolor'])) checked( $options['lakefront_radio_bodycolor'], black ); ?> value="black" /> <label>Black</label><br
+		['lakefront_radio_bodycolor'])) checked( $options['lakefront_radio_bodycolor'], 1 ); ?> value="black" /> <label>Black</label><br
 		/>
 		<input type="radio" name="lakefront_options_settings[lakefront_radio_bodycolor]" <?php if (isset($options
-		['lakefront_radio_bodycolor'])) checked( $options['lakefront_radio_bodycolor'], white ); ?> value="white" /> <label>White</label><br
+		['lakefront_radio_bodycolor'])) checked( $options['lakefront_radio_bodycolor'], 2 ); ?> value="white" /> <label>White</label><br
 		/>
 		<input type="radio" name="lakefront_options_settings[lakefront_radio_bodycolor]" <?php if (isset($options
-		['lakefront_radio_bodycolor'])) checked( $options['lakefront_radio_bodycolor'], red ); ?> value="red" /> <label>Red</label>
+		['lakefront_radio_bodycolor'])) checked( $options['lakefront_radio_bodycolor'], 3 ); ?> value="red" /> <label>Red</label>
 		<?php
 	}
 	

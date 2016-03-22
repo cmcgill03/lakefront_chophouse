@@ -17,6 +17,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
+
 <?php $options=get_option( 'lakefront_options_settings' );?>
 <?php wp_enqueue_script('jquery'); ?>
 <?php wp_head(); ?>
@@ -97,9 +98,9 @@ jQuery(document).ready(function(){
 		<li>  <img src="wp-content\themes\lakefront_chophouse\images\slider2.jpg" /> <div class="caption1"> 
 			<span>Image 1</span>
 			 </li>
-		<li>  <img src="wp-content\themes\lakefront_chophouse\images\slider3.jpg" /><div class="caption1"><span>Image 1</span></li>
-		<li>  <img src="wp-content\themes\lakefront_chophouse\images\slider2.jpg" /><div class="caption1"><span>Image 2</span></li>
-		<li>  <img src="wp-content\themes\lakefront_chophouse\images\slider1.jpg" /><div class="caption1"><span>Image 3</span></li>
+		<li>  <img src="http://phoenix.sheridanc.on.ca/~ccit3441/wp-content/uploads/2016/03/slider1.jpg" /><div class="caption1"><span>Image 1</span></li>
+		<li>  <img src="http://phoenix.sheridanc.on.ca/~ccit3441/wp-content/uploads/2016/03/slider2.jpg" /><div class="caption1"><span>Image 2</span></li>
+		<li>  <img src="http://phoenix.sheridanc.on.ca/~ccit3441/wp-content/uploads/2016/03/slider3.jpg" /><div class="caption1"><span>Image 3</span></li>
 	</ul>
 	
 	<div id="content" class="site-content">
