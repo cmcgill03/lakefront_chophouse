@@ -22,8 +22,7 @@ function lakefront_settings_init() {
 		echo '1. Change the title,' ?></br><?php
 		echo '2. Change the colour of the title,' ?></br><?php
 		echo '3. Change the main text colour,' ?></br><?php
-		echo '4. Choose a font (maybe),' ?></br><?php
-		echo '5. Direct the social media links to your pages.'?></br><?php ;
+		echo '4. Direct the social media links to your pages.'?></br><?php ;
 	}// the function created in add_settings_section
 	
 	/*Title text */

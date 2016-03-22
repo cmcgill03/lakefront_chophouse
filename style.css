@@ -1020,8 +1020,34 @@ a:active {
 /*--------------------------------------------------------------
 ## Options Page
 --------------------------------------------------------------*/
-
-
+input[type=text], 
+input[type=password], 
+input[type=checkbox], 
+input[type=color], 
+input[type=date], 
+input[type=datetime], 
+input[type=datetime-local], 
+input[type=email], 
+input[type=month], 
+input[type=number], 
+input[type=radio], 
+input[type=tel], 
+input[type=time], 
+input[type=url], 
+input[type=week], 
+input[type=search], 
+select, 
+textarea {
+    border: 1px solid #ddd;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+    background-color: #fff;
+    color: #32373c;
+    outline: 0;
+    -webkit-transition: 50ms border-color ease-in-out;
+    transition: 50ms border-color ease-in-out;
+    width: 350px;
+}
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/
