@@ -17,21 +17,33 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
+<?php $options=get_option( 'cd_options_settings' );?>
 <?php wp_head(); ?>
+
+
+<style>
+#primary {
+	color: <?php echo $options['cd_radio_field']; ?>
+}
+</style>
+
 </head>
+
+
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'lakefront_chophouse' ); ?></a>
 
 		<header id="masthead" class="site-header" role="banner">
-	
+		
 		<div class="site-branding">
+
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php echo $options['cd_text_field'];?></a></h1>
 			<?php else : ?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php echo $options['cd_text_field'];?></a></p>
 			<?php
 			endif;
 

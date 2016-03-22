@@ -1,6 +1,6 @@
 <?php
 
-function cd_add_submenu() {
+function lakefront_add_submenu() {
 	add_submenu_page( 'themes.php', 'My Super Awesome Options Page', 'Theme Options', 'manage_options', 'theme_options', 'my_theme_options_page');
 }
 
@@ -69,13 +69,13 @@ function cd_settings_init() {
 		$options = get_option( 'cd_options_settings' );
 		?>
 		<input type="radio" name="cd_options_settings[cd_radio_field]" <?php if (isset($options
-		['cd_radio_field'])) checked( $options['cd_radio_field'], 1 ); ?> value="1" /> <label>Option One</label><br
+		['cd_radio_field'])) checked( $options['cd_radio_field'], black ); ?> value="black" /> <label>Black</label><br
 		/>
 		<input type="radio" name="cd_options_settings[cd_radio_field]" <?php if (isset($options
-		['cd_radio_field'])) checked( $options['cd_radio_field'], 2 ); ?> value="2" /> <label>Option Two</label><br
+		['cd_radio_field'])) checked( $options['cd_radio_field'], blue ); ?> value="blue" /> <label>Blue</label><br
 		/>
 		<input type="radio" name="cd_options_settings[cd_radio_field]" <?php if (isset($options
-		['cd_radio_field'])) checked( $options['cd_radio_field'], 3 ); ?> value="3" /> <label>Option Three</label>
+		['cd_radio_field'])) checked( $options['cd_radio_field'], white ); ?> value="white" /> <label>White</label>
 		<?php
 	}
 	
