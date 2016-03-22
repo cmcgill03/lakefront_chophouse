@@ -11,6 +11,9 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
+<!--
+* print out and add various post-related classes to the div tag being entry-header
+-->
 		<?php
 			if ( is_single() ) {
 				the_title( '<h1 class="entry-title">', '</h1>' );
@@ -19,6 +22,10 @@
 			}
 
 		if ( 'post' === get_post_type() ) : ?>
+		
+<!--
+* If there is a single post, display the entry title, if not get the bookmark permalink or Retrieve the post type of the current post or of a given post
+-->		
 		<div class="entry-meta">
 			<?php lakefront_chophouse_posted_on(); ?>
 		</div><!-- .entry-meta -->
