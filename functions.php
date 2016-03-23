@@ -121,6 +121,10 @@ function loadbxslider()
 add_action('init', 'loadbxslider');
 
 
+/*Call the widget */
+
+require get_stylesheet_directory() . '/inc/lakefront_chophouse_testimonial.php'; 
+
 /*Enqueue goolge Fonts*/
 function google_font(){
 	/*Registers the google font and then enqueues it into the theme */
