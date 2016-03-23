@@ -23,10 +23,12 @@ if ( post_password_required() ) {
 <div id="comments" class="comments-area">
 
 	<?php
-	// You can start editing here -- including this comment!
 	if ( have_comments() ) : ?>
 		<h2 class="comments-title">
 			<?php
+<!--
+* allows for commenting
+-->
 				printf( // WPCS: XSS OK.
 					esc_html( _nx( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'comments title', 'lakefront_chophouse' ) ),
 					number_format_i18n( get_comments_number() ),
@@ -43,7 +45,7 @@ if ( post_password_required() ) {
 				<div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'lakefront_chophouse' ) ); ?></div>
 				<div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'lakefront_chophouse' ) ); ?></div>
 
-			</div><!-- .nav-links -->
+			</div><!-- .nav-links, functionality to go forward and backward in posted comments-->
 		</nav><!-- #comment-nav-above -->
 		<?php endif; // Check for comment navigation. ?>
 
@@ -71,8 +73,7 @@ if ( post_password_required() ) {
 
 	endif; // Check for have_comments().
 
-
-	// If comments are closed and there are comments, let's leave a little note, shall we?
+	// If comments are closed and there are comments, ability to leave a message
 	if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
 
 		<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'lakefront_chophouse' ); ?></p>
@@ -81,5 +82,7 @@ if ( post_password_required() ) {
 
 	comment_form();
 	?>
-
+<!--
+* end the the loop, finishing with the message comments are closed
+-->
 </div><!-- #comments -->

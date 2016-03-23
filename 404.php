@@ -11,11 +11,19 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+			
+<!--
+* Displays the header saying Opps, that page cannot be found, when the previous get header function is run
+-->
 
 			<section class="error-404 not-found">
 				<header class="page-header">
 					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'lakefront_chophouse' ); ?></h1>
 				</header><!-- .page-header -->
+				
+<!--
+*  Displays the content of the page, suggesting the user to go elsewhere on the site
+-->
 
 				<div class="page-content">
 					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'lakefront_chophouse' ); ?></p>
@@ -42,7 +50,10 @@ get_header(); ?>
 							) );
 						?>
 						</ul>
-					</div><!-- .widget -->
+					</div>
+<!-- 
+* Runs .widget categories based on the parametrs of order, orderby, count, title and number  
+-->
 
 					<?php
 						endif;
