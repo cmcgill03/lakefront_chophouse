@@ -16,3 +16,5 @@ class lakefront_testimonial extends WP_Widget {
 		parent::__construct('testimonial', __('Testimonials', 'lakefront_chophouse'), $lakefront_widget);
 	} 
 }
+
+add_action( 'widgets_init', function(){ register_widget('lakefront_testimonial' ); }); 

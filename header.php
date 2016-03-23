@@ -57,9 +57,9 @@ jQuery(document).ready(function(){
 
 </head>
 
-/**
+<!-- 
  * Set parameters for the slide via jquery, javascript
- */
+ -->
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
