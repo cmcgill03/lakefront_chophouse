@@ -7,3 +7,12 @@
  * Author URI: http://phoenix.sheridanc.on.ca/~ccit3441/
  * Version: 1.0
 */
+
+class lakefront_testimonial extends WP_Widget {
+	public function __construct() {
+		$lakefront_widget = array(
+		'classname' => 'widget_testimonial',
+		'description' => __( 'Place a certain number of testimonials.') );
+		parent::__construct('testimonial', __('Testimonials', 'lakefront_chophouse'), $lakefront_widget);
+	} 
+}
